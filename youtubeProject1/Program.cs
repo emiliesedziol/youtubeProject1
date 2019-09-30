@@ -70,6 +70,16 @@ namespace youtubeProject1
             Console.WriteLine(5 % 3);  // 5 modular (mod) 3 will give the remander which is 2
 
             Console.ReadLine();
+
+
+            Console.WriteLine("");
+
+            Console.Write("Name of your dog ");  // waits for a line of text
+            String newName = Console.ReadLine();
+            Console.WriteLine("Dogs name " + newName);
+
+            Console.ReadLine();
+
         }
     }
 }
