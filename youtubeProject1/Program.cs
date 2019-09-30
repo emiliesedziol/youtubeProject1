@@ -27,12 +27,34 @@ namespace youtubeProject1
             Console.WriteLine(Dog1 + "  " + DogAge1);
             Console.WriteLine(Dog1 + " walks " + HowFarWalks + " a day");
             Console.WriteLine("Jeffery");
+
+
             // data type
             string  Dog2 = "Cassian";
             // char age = '';  // only 1 characters
            //  int DogAge = 1; //  no decimals can be used
-            double DogAgeMonths = .7;  // float, double, decimal
-            Console.WriteLine("Who live at my house "+ Dog2 + " and is " + DogAgeMonths + " old");
+            double DogAgeMonths = .7;  // float, double, decimal -- note decimal and float must have decimal with zero or the number after it
+            bool isBig = true;
+            Console.WriteLine("Who live at my house "+ Dog2 + " and is " + DogAgeMonths + " old, is big " + isBig);
+            /*
+             * 
+                /|\
+               /_|_\
+              /__|__\
+             /___|___\
+            /____|____\
+
+            Dogs in the Neighborhood
+            Cassian  1
+            Cassian walks 5 mile a day
+            Brewen
+            Embry
+            Nala  0
+            Nala walks .1 mile a day
+            Jeffery
+            Who live at my house Cassian and is 0.7 old, is big True
+
+             */
             Console.ReadLine();
         }
     }
