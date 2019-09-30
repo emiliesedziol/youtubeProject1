@@ -55,6 +55,20 @@ namespace youtubeProject1
             Who live at my house Cassian and is 0.7 old, is big True
 
              */
+             //             string starts at position zero, phrase[0] is W
+            string phrase = "Who live at my house " + Dog2 + " and is " + DogAgeMonths + " old, is big " + isBig;
+            Console.WriteLine(phrase);
+            Console.WriteLine(phrase.Length + " number of characters ");
+            Console.WriteLine(phrase.Contains("z") + " does not contain a 'z'");
+            Console.WriteLine(phrase.IndexOf("z"));
+            Console.WriteLine(phrase.IndexOf("o"));
+
+            // numbers
+
+            Console.WriteLine( 0909 ); // leading zero is dropped
+
+            Console.WriteLine(5 % 3);  // 5 modular (mod) 3 will give the remander which is 2
+
             Console.ReadLine();
         }
     }
