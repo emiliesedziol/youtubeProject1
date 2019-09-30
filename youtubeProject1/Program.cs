@@ -74,7 +74,7 @@ namespace youtubeProject1
 
             Console.WriteLine("");
 
-            Console.Write("Name of your dog ");  // waits for a line of text
+            Console.Write("Name of your dog ");  // waits for a line of text 
             String newName = Console.ReadLine();
             Console.WriteLine("Dogs name " + newName);
 
