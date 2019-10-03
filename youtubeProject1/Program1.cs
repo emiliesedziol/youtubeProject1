@@ -2,11 +2,11 @@
 
 namespace youtubeProject1
 {
-    class Program
+    class Program1
     {
         private const string Value = "A number wasn't entered";
 
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
 
             Console.WriteLine(Cube(5));
