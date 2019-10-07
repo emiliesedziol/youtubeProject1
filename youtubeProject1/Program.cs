@@ -9,36 +9,47 @@ namespace youtubeProject1
         static void Main(string[] args)
         {
 
-            Console.Write("Enter a Number: ");
-            double  num1 = Convert.ToDouble(Console.ReadLine());
+            String retrunDay = GetDay(4);
 
-            Console.Write("Enter Operator ( + - * / ");
-            string op = Console.ReadLine();
-
-            Console.Write("Enter a Number ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
-
-            if (op == "+")
-            {
-                Console.WriteLine(num1 + num2);
-            }
-            else if (op == "-")
-                {
-                Console.WriteLine(num1 - num2);
-                } else if (op == "*")
-                    {
-                        Console.WriteLine(num1 * num2);
-                     } else if (op == "/")
-                        {
-                             Console.WriteLine(num1 / num2);
-                        }
-                        else
-                            {
-                Console.WriteLine("Invalid operator ");
-                             };
+            Console.WriteLine(retrunDay);
 
             Console.ReadLine();
 
+        }
+
+        static string GetDay(int dayNum)
+        {
+            string dayName;
+
+            switch (dayNum)
+            {
+                case 0:
+                    dayName = "Sunday";
+                    break;
+                case 1:
+                    dayName = "Monday";
+                    break;
+                case 2:
+                    dayName = "Tuesday";
+                    break;
+                case 3:
+                    dayName = "Wednsday";
+                    break;
+                case 4:
+                    dayName = "Thursday";
+                    break;
+                case 5:
+                    dayName = "Friday";
+                    break;
+                case 6:
+                    dayName = "Saturday";
+                    break;
+                default:
+                    dayName = "Invalid Day";
+                    break;
+            }
+
+            return dayName;
         }
 
     }
