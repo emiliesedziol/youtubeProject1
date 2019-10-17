@@ -9,19 +9,25 @@ namespace youtubeProject1
         static void Main(string[] args)
         {
 
-            int index = 1;
-            while(index < 10)
-            {
-                Console.WriteLine("Index " + index);
-                index++;
-            }
+            int baseNum = 4;
+            int powNum = 3;
 
+            Console.WriteLine( GetPow(baseNum, powNum));
 
             Console.ReadLine();
 
         }
 
-       
+        static int GetPow( int baseNum, int powNum)
+        {
+            int result = 1;
+            for (int i = 0; i < powNum; i++)
+            {
+                result = result * baseNum;
+            }
 
+            return result;
+
+        }
     }
 }
