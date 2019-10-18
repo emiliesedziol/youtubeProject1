@@ -8,39 +8,33 @@ namespace youtubeProject1
 
         static void Main(string[] args)
         {
-
-            int baseNum = 4;
-            int powNum = 3;
-
-            Console.WriteLine( GetPow(baseNum, powNum));
-
-            Console.ReadLine();
-
-            int[,] numberGrid =
+            try
             {
-                {1,2 },
-                {3,4 },
-                {5,6 }
+                Console.Write("Enter a number: ");
+                int num1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter a second number: ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
 
-            };
-            Console.WriteLine(numberGrid[1, 1]);
-
-            int[,] myArray = new int[2, 3];  // have to define the size of the array
-
-            Console.ReadLine();
-
-        }
-
-        static int GetPow( int baseNum, int powNum)
-        {
-            int result = 1;
-            for (int i = 0; i < powNum; i++)
+                Console.WriteLine(num1 / num2);
+            }
+            catch (DivideByZeroException e)
             {
-                result = result * baseNum;
+                Console.WriteLine("Error " + e.Message);
+            }
+            catch(FormatException e)
+            {
+                Console.WriteLine("Error " + e.Message);
             }
 
-            return result;
+            finally
+            {
+                Console.WriteLine("Use this if something needs to be done even if there is an error");
+            }
+
+
+            Console.ReadLine();
 
         }
+
     }
 }
