@@ -8,28 +8,15 @@ namespace youtubeProject1
 
         static void Main(string[] args)
         {
-            try
-            {
-                Console.Write("Enter a number: ");
-                int num1 = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Enter a second number: ");
-                int num2 = Convert.ToInt32(Console.ReadLine());
+            // data type - Class model represents world entities - specification
 
-                Console.WriteLine(num1 / num2);
-            }
-            catch (DivideByZeroException e)
-            {
-                Console.WriteLine("Error " + e.Message);
-            }
-            catch(FormatException e)
-            {
-                Console.WriteLine("Error " + e.Message);
-            }
+            // book object includes title, author and pages - instance of a book
+            Book book1 = new Book();
+            book1.title = "Thrawn";
+            book1.author = "unknown";
+            book1.pages = 1000;
 
-            finally
-            {
-                Console.WriteLine("Use this if something needs to be done even if there is an error");
-            }
+            Console.WriteLine(book1.title);
 
 
             Console.ReadLine();
