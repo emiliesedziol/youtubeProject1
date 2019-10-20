@@ -9,11 +9,14 @@ namespace youtubeProject1
         static void Main(string[] args)
         {
 
-            Student student1 = new Student("Bill", "Business", 2.8);
-            Student student2 = new Student("George", "Economics", 3.8);
+            Movie avengers = new Movie("The Avengers", "Joss Whedon", "PG-13");
+            Movie shrek = new Movie("Shrek", "Adam Adamson", "PG");
 
-            Console.WriteLine(student1.name + " has honors " + student1.HasHonors());
-            Console.WriteLine(student2.name + " has honors " +  student2.HasHonors());
+            Console.WriteLine(avengers.title + " rating is " + avengers.Rating);
+
+            shrek.Rating = "b";
+
+            Console.WriteLine(shrek.title + " rating is " + shrek.Rating);
 
             Console.ReadLine();
 
