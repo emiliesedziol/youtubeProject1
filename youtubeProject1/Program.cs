@@ -9,14 +9,12 @@ namespace youtubeProject1
         static void Main(string[] args)
         {
 
-            Movie avengers = new Movie("The Avengers", "Joss Whedon", "PG-13");
-            Movie shrek = new Movie("Shrek", "Adam Adamson", "PG");
+            Song holiday = new Song("Holiday", "Green Day", 200);
+            
+            Song Kashmirr = new Song("Kashmirr", "Led Zep", 150);
 
-            Console.WriteLine(avengers.title + " rating is " + avengers.Rating);
-
-            shrek.Rating = "b";
-
-            Console.WriteLine(shrek.title + " rating is " + shrek.Rating);
+            Console.WriteLine(Song.songCount);
+            Console.WriteLine(holiday.getSongCount());
 
             Console.ReadLine();
 
