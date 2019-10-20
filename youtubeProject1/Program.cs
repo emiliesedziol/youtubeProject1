@@ -8,26 +8,12 @@ namespace youtubeProject1
 
         static void Main(string[] args)
         {
-            // data type - Class model represents world entities - specification
 
-            Book book1 = new Book("Thrawn", "unknown", 500);
-            Book book2 = new Book("other", "unknown", 400);
-            /*
-            // book object includes title, author and pages - instance of a book
-            Book book1 = new Book();  // this calls the constructor method in Book class
-            book1.title = "Thrawn";
-            book1.author = "unknown";
-            book1.pages = 1000;
+            Student student1 = new Student("Bill", "Business", 2.8);
+            Student student2 = new Student("George", "Economics", 3.8);
 
-            Console.WriteLine(book1.title);
-
-            Book book2 = new Book();  // this calls the constructor method in Book class
-            book2.title = "big boy";
-            book2.author = "unknown";
-            book2.pages = 100;
-            */
-            Console.WriteLine(book2.title);
-            
+            Console.WriteLine(student1.name + " has honors " + student1.HasHonors());
+            Console.WriteLine(student2.name + " has honors " +  student2.HasHonors());
 
             Console.ReadLine();
 
