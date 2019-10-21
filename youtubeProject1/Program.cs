@@ -8,13 +8,11 @@ namespace youtubeProject1
 
         static void Main(string[] args)
         {
+            // Math is a static class
+            Console.WriteLine(Math.Sqrt(144));
+            // static method created in the class
+            UsefullTools.SayHi("Cassian");
 
-            Song holiday = new Song("Holiday", "Green Day", 200);
-            
-            Song Kashmirr = new Song("Kashmirr", "Led Zep", 150);
-
-            Console.WriteLine(Song.songCount);
-            Console.WriteLine(holiday.getSongCount());
 
             Console.ReadLine();
 
